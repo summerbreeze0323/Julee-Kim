@@ -1,4 +1,4 @@
-# Project Title
+# 김주리의 포트폴리오 Git 저장소
 
 One Paragraph of project description goes here
 
