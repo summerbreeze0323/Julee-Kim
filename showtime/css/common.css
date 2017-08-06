@@ -1,0 +1,302 @@
+/* reset */
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,input,button{margin:0; padding:0; color:#fff;}
+html,body{width:100%;}
+.container_wrap{overflow: hidden;}
+body,tr,th,td,input,button{font:16px "나눔고딕",nanumgodic,sans-serif;}
+img{max-width: 100%;}
+img,fieldset{border:none;}
+input{border: none;}
+a{text-decoration: none; color: #fff; outline: 0;}
+ul,ol,li{list-style: none;}
+strong,em{font-weight: normal; font-style: normal;}
+
+/* common */
+.hide{display: none;}
+.screen_out{text-indent: -9999px; overflow: hidden; width:0; height: 0; display:block;}
+.clearfix:after{content:"."; clear:both; display: block; width:0; height: 0; overflow: hidden;}
+
+#container_wrap{position: relative; min-width: 320px; width: 100%;}
+
+.header, .content_area{max-width: 1440px; margin: 0 auto;}
+
+/* Header */
+.header{position: relative; height: 25px; padding: 15px; background-color: #000;}
+.header .header_inner{height: 25px;}
+.header h1{display: block; height: 25px; text-align: center;}
+.header h1 a{display: inline-block; width: 70px; height: 25px; background: url('../imgs/showtime-logo.svg') no-repeat center center; text-indent: -9999em;}
+
+.header .gnb .menu_icon{position: absolute; top: 15px; left: 15px; width: 20px; height: 25px; background: url(../imgs/menu-btn.png) no-repeat center center; text-indent:  -9999em; z-index: 15}
+.header .gnb .menu_list{position: absolute; top: 0; left: -100%; width: 100%; padding-top: 55px; z-index: 14; background-color: #000;}
+.header .gnb .menu_list li a{display: block; padding: 15px; font-weight: 400;}
+.header .gnb .menu_list .sub_1 .menu_comedy{padding-bottom: 15px;}
+.header .gnb .menu_list .sub_2{border-top: 1px solid #7D7D7D; padding: 15px 0;}
+.header .gnb .menu_list .sub_2 li a{font-size: 14px; font-weight: 400; color: #C9141F;}
+.header .gnb .menu_list .sub_3{background-color: #B10000; padding: 10px 0 15px;}
+.header .gnb .menu_list .sub_3 .schedules{display: none;}
+
+.search_area{position: absolute; top: 0; left: 0; width: 100%; height: 55px;}
+.header .search_area input{position: absolute; top: 15px; right: 20px; left: 100%; display: block; padding: 3px 5px 2px; width:calc(100% - 64px); height: 25px; z-index: 12; border-radius: 3px; box-sizing: border-box; color: #000; opacity: 0;}
+.header .search_icon{position: absolute; top: 17px; right: 15px; width: 22px; height: 22px; background: url(../imgs/search.png) no-repeat center center; background-size: contain; text-indent: -9999px; z-index: 13;}
+
+/* THE ENTIRE SHOWTIME LIBRAR */
+.library_inner{background-color: #1b1b1f;}
+.library_area ul{font-size: 22px; padding-top: 40px;}
+.library_area ul>h3{color: #7D7D7D; padding: 10px 15px;}
+.library_area ul li{border-top: 1px solid #2d2d33; padding: 30px 15px;}
+.library_area ul li a{display: block; background: url(../imgs/grey-arrow-to-right.png) no-repeat center right;}
+.library_area ul li a h4{font-weight: 400;}
+.library_area ul .library_red_box p{display: none;}
+
+.library_area ul .library_red_box .text_area a{background-image: none;}
+.library_area ul .library_red_box .text_area > p{display: none;}
+.try_it_now{max-width: 250px;}
+
+/* store_wrap */
+.store_wrap{background-color: #fff; padding: 20px 15px 0;}
+.store_section{text-align: center; background: url("../imgs/0_0_0_prm-shohp_360x160.png") no-repeat bottom center; background-size: 280px;}
+.store_section .store_banner{padding-bottom: 120px;}
+.store_section h3{padding: 2% 0; line-height: 22px; font-size: 18px; font-weight: 500; color: #000101;}
+.store_section .shop_now_box{padding: 2% 0;}
+.shop_now_box a{display: inline-block; padding: 11px 10px; border: 2px solid #000101; border-radius: 20px; font-size: 12px; font-weight: 600; color: #000101;}
+.store_section a:hover{background-color: #000101; color: #fff;}
+
+/* footer_schedule_section */
+.footer_wrap{}
+.footer_schedule_section{background-color: #C9141F; padding: 15px;}
+.footer_schedule_section .footer_logo{margin: 10px 0 40px; width: 128px; height: 44.8px; text-indent: -9999px; overflow: hidden; background: url(../imgs/showtime-logo.svg) no-repeat; background-size: cover;}
+.footer_schedule_section .footer_promo{line-height: 20px; padding-bottom: 10px;}
+.footer_schedule_section .footer_promo h5{margin-bottom: 5px; font-size: 16px; font-weight: 500; color: #500207;}
+.footer_schedule_section .footer_promo a{display: inline-block; margin-bottom: 30px; padding-right: 20px; font-size: 18px; color: #fff; background: url(../imgs/arrow-point-to-right.png) no-repeat center right; background-size: 10px;}
+
+.footer_schedule_section .footer_schedule{border-top: 3px solid #8a0811; line-height: 20px;}
+.footer_schedule_section .footer_schedule h4{padding-top: 40px; font-weight: 400; color: #500207;}
+.footer_schedule_section .footer_schedule ul{margin: 20px 0;}
+.footer_schedule_section .footer_schedule ul li{margin-bottom: 18px;}
+.footer_schedule_section .footer_schedule ul li .pro_time{}
+.footer_schedule_section .footer_schedule ul li h5{float: left; font-size: 16px; font-weight: 400; line-height: 18px; padding-bottom: 3px;}
+.footer_schedule_section .footer_schedule ul li h5>span{font-size: 13px; font-weight: 400; padding-top: 2px; line-height: 16px;}
+.footer_schedule_section .footer_schedule ul li a{display: inline-block;}
+.footer_schedule_section .footer_schedule ul li .program a>span{font-size: 14px;}
+.footer_schedule_section .footer_schedule ul li a.see_schedule{padding-right: 20px; color: #500207; background: url(../imgs/grey-arrow-to-right.png) no-repeat center right; background-size: 12px;}
+
+/* footer_nav_section */
+.footer_nav_section{background-color: #B10000; padding: 40px 15px 15px;}
+.footer_nav_inner{}
+ul.footer_nav_link{font-size: 14px;}
+ul.footer_nav_link li{margin-bottom: 20px;}
+ul.footer_nav_link li a{display: inline-block;}
+
+ul.footer_nav_icon{padding: 10px 0 30px;}
+ul.footer_nav_icon li{margin: 10px 20px 20px 0; float: left;}
+ul.footer_nav_icon li a{display: inline-block; width: 24px; height: 24px; text-indent: -9999px; overflow: hidden;}
+ul.footer_nav_icon li .twitter{background: url(../imgs/twitter.png) no-repeat;}
+ul.footer_nav_icon li .facebook{background: url(../imgs/facebook.png) no-repeat;}
+ul.footer_nav_icon li .instagram{background: url(../imgs/instagram.png) no-repeat;}
+ul.footer_nav_icon li .pinterest{background: url(../imgs/pinterest.png) no-repeat;}
+ul.footer_nav_icon li .youtube{background: url(../imgs/youtube.png) no-repeat;}
+
+.footer_disclimer{}
+.footer_disclimer p{font-size: 12px; line-height: 16px;}
+.footer_disclimer p a{display: inline-block; text-decoration: underline;}
+.footer_disclimer p a:first-child{padding-right: 3px;}
+.footer_disclimer p a.left_line{padding-left: 5px;}
+
+@media screen and (min-width:480px) {
+    .header{height: 33px;}
+    .header .header_inner{height: 33px;}
+    .header h1{height: 33px;}
+    .header h1 a{width: 93px; height: 33px;}
+    .header .gnb .menu_icon{top: 18px;}
+    .search_area{height: 63px;}
+    .header .header_inner .search_area input{height: 33px;}
+    .header .search_icon{top: 20px;}
+
+    .store_section .store_banner{padding-bottom: 130px;}
+    .store_section a{padding: 11px 25px;}
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+    /* header */
+    .header{height: 33px; padding: 15px 50px;}
+    .header h1{display: block; width: 100%; height: 33px; float: left;}
+    .header h1 a{width: 93px; height: 33px;}
+    .header .gnb .menu_list li a{padding: 15px 50px;}
+    .header .gnb .menu_icon{top: 19px; left: 50px;}
+    .header .header_inner .search_area{top: 0px}
+/*    .header .search_area form{height: 34px;}*/
+    .header .header_inner .search_area input{left: 50px; padding: 3px 10px 2px; width: calc(100% - 140px);}
+    .header .search_icon{right: 50px;}
+
+    /* THE ENTIRE SHOWTIME LIBRAR */
+    .library_area ul{font-size: 18px; padding: 40px 0 0;}
+    .library_area ul>h3{color: #7D7D7D; padding: 10px 15px;}
+    .library_area ul li{position: relative; float: left; margin: 0 2% 2% 0; padding: 0; width: 32%; border-top: none;}
+    .library_area ul li a{display: block; padding-top: 100%; background-image: none;}
+    .library_area ul li a h4{position: absolute; left: 15px; bottom: 15px; font-weight: 400;}
+
+    .library_area ul .series{background: url(../imgs/804_6_0_prm-s6keyart_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .movies{background: url(../imgs/0_0_3420819_02_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .sports{margin-right: 0; background: url(../imgs/46_0_3440942_prm-012817_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .documentaries{background: url(../imgs/0_0_3440435_05_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .comedy{background: url(../imgs/0_0_3434574_02_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .library_red_box{margin-right: 0; padding: 32% 0 0 0;}
+    .library_area ul .library_red_box h2{position: absolute; top: 0; margin: 20px 15px; font-size: 21px; font-weight: 400; line-height: 26px; text-align: left;}
+    .library_area ul .library_red_box a{margin: -70px 15px;
+    display: block; padding: 15px 10px; border-radius: 20px; font-size: 14px; font-weight: 600; color: #000; background-color: #fff;}
+
+    /* store_wrap */
+    .store_wrap{padding: 0 50px 0;}
+    .store_section{padding-top: 3%; background-size: 280px; background-position: left bottom;}
+    .store_section .store_banner{margin: 0 0 3% 40%; width: 65%; padding-bottom: 0;}
+    .store_section .store_banner a{padding: 11px 30px;}
+
+    /* footer_schedule_section */
+    .footer_schedule_section{padding: 80px 50px;}
+    .footer_wrap .footer_schedule_section .footer_promo{float: left; width: 40%;}
+    .footer_wrap .footer_schedule_section .footer_schedule{float: left; width: 60%; border-top: 0;}
+    .footer_wrap .footer_schedule_section .footer_schedule h4{margin-bottom: 20px; padding-top: 0; padding-right: 80px; text-align: right;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li{float: left; margin-bottom: 0; width: 100%;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .pro_time{float: left; width: 45%; text-align: right;}
+    .footer_schedule_section .footer_schedule ul li h5{float: none; padding-right: 20px;}
+    .pro_time span{display: inline-block;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .program{padding-left: 20px; float: left; padding-bottom: 15px; width: 49%; border-left: 3px solid #8a0811;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .program a{max-width: 45%; line-height: 18px;}
+    /* last li*/
+    .footer_wrap .footer_schedule_section .footer_schedule ul .last_li{float: right; width: 100%;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul .last_li .see_schedule_box{float: left; margin-left: 45%; padding-left: 21px; width: 50%; border-left: 3px solid #8a0811;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .see_schedule{}
+
+    .footer_nav_section{padding: 40px 50px;}
+    .footer_nav_inner{float: right; width: 41%;}
+    .footer_nav_inner .footer_nav_link{text-align: right;}
+    .footer_nav_inner .footer_nav_link li{display:inline-block; margin: 0 0 20px 10px;}
+    .footer_nav_inner .footer_nav_link li a{}
+    .footer_nav_inner .footer_nav_icon{float: right;}
+    .footer_nav_inner .footer_nav_icon li{margin-top: 0;}
+    .footer_nav_inner .footer_nav_icon .youtube_icon{margin-right: 0;}
+    .footer_nav_section .footer_disclimer{width: 55%;}
+    .footer_nav_section .footer_disclimer p{line-height: 16px;}
+}
+/* and (max-width: 1199px)*/
+@media screen and (min-width:992px){
+    .header{padding: 0; max-width: 1200px; height: 33px; background-color: transparent;}
+    .header_inner{position: relative; padding: 50px; height: 33px; box-sizing: border-box;}
+    .header h1{float: left; height: 33px; text-align: center;}
+    .header h1 a{display: inline-block; width: 93px; height: 33px;}
+
+    .search_area{position: static;}
+    .header .search_area input{position: absolute; top: 50px; left: 0; width: calc(100% - 295px); height: 33px; padding: 3px 15px 0; background-color: transparent; border-bottom: 1px solid #fff; color: #fff; z-index: 12;}
+    .header .search_icon{display: block; position: absolute; top: 50px; right: 50px; width: 22px; height: 22px; background: url(../imgs/search.png) no-repeat center center; background-size: contain; text-indent: -9999px;}
+
+
+    .header .gnb{float: left; width: 86%; margin-top: 1px;}
+    .header .gnb .menu_icon{display: none;}
+    .header .gnb .menu_list{position: static; top: 0; left: 0;  width: 100%; height: 33px; padding-top: 0; z-index: 10; background-color: transparent;}
+    .header .gnb .menu_list ul{float: left; line-height: 33px;}
+    .header .gnb .menu_list li{float: left;}
+    .header .gnb .menu_list li a{display: block; float: left; padding: 0; font-weight: 400;}
+
+    .header .gnb .menu_list .sub_1{margin-left: 10px;}
+    .header .gnb .menu_list .sub_1 li{padding: 0 8px;}
+    .header .gnb .menu_list .sub_1 li:first-child{display: none;}
+    .header .gnb .menu_list .sub_1 .menu_comedy{padding-bottom: 0;}
+    .header .gnb .menu_list .sub_2{display: none;}
+    .header .gnb .menu_list .sub_3{position: absolute; right: 80px; padding: 0; line-height: 33px; background-color: transparent;}
+    .header .gnb .menu_list .sub_3 li{margin: -2px 8px;}
+    .header .gnb .menu_list .sub_3 li:first-child{padding: 2px 13px; background-color: #B10000; border-radius: 20px; }
+    .header .gnb .menu_list .sub_3 .schedules{display: block; padding-left: 30px; background: url(../imgs/schedules.svg) no-repeat center left;}
+
+    /* THE ENTIRE SHOWTIME LIBRAR */
+    .library_area ul{font-size: 18px;}
+    .library_area ul>h3{color: #7D7D7D; padding: 10px 15px;}
+    .library_area ul li{position: relative; float: left; margin: 0 2% 2% 0; padding: 0; width: 32%; border-top: none;}
+    .library_area ul li a{display: block; padding-top: 100%; background-image: none;}
+    .library_area ul li a h4{position: absolute; left: 15px; bottom: 15px; font-weight: 400;}
+
+    .library_area ul .series{background: url(../imgs/804_6_0_prm-s6keyart_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .movies{background: url(../imgs/0_0_3420819_02_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .sports{margin-right: 0; background: url(../imgs/46_0_3440942_prm-012817_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .documentaries{background: url(../imgs/0_0_3440435_05_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .comedy{background: url(../imgs/0_0_3434574_02_300x300.jpg) no-repeat; background-size: cover;}
+    .library_area ul .library_red_box{margin-right: 0; padding: 32% 0 0 0;}
+    .library_area ul .library_red_box h2{position: absolute; top: 0; margin: 20px 15px 0; font-size: 30px; font-weight: 400; line-height: 32px; text-align: left;}
+    .library_area ul .library_red_box .text_area{width: 100%;}
+    .library_area ul .library_red_box .text_area div p{display: block; margin: -190px 20px 0; height: 85px;}
+    .library_area ul .library_red_box a{margin: 38px auto 20px auto; display: block; padding: 15px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; color: #000; background-color: #fff;}
+
+    /* store_wrap */
+    .store_wrap{padding: 0 50px 0;}
+    .store_section{padding-top: 5%; background-size: 280px; background-position: left bottom;}
+    .store_section .store_banner{margin: 0 0 5% 35%; padding-bottom: 0;}
+    .store_section .store_banner h3{float: left; width: 70%; font-size: 24px; line-height: 26px;  text-align: left;}
+    .store_section .store_banner a{margin-left: 10px; padding: 11px 30px; font-size: 16px;}
+
+    /* footer_schedule_section */
+    .footer_schedule_section{padding: 80px 50px;}
+    .footer_wrap .footer_schedule_section .footer_promo{float: left; width: 40%;}
+    .footer_wrap .footer_schedule_section .footer_promo h5{font-size: 20px; line-height: 23px;}
+    .footer_wrap .footer_schedule_section .footer_promo a{font-size: 20px; line-height: 23px;}
+    .footer_wrap .footer_schedule_section .footer_schedule{float: left; width: 60%; border-top: 0;}
+    .footer_wrap .footer_schedule_section .footer_schedule h4{margin-bottom: 20px; padding-top: 0; padding-right: 80px; text-align: right; font-size: 20px;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li{float: left; margin-bottom: 0; width: 100%;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .pro_time{float: left; width: 45%; text-align: right;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .pro_time h5{font-size: 20px;}
+    .footer_schedule_section .footer_schedule ul li h5>span{font-size: 16px;}
+    .footer_schedule_section .footer_schedule ul li h5{float: none; padding-right: 20px;}
+    .pro_time span{display: inline-block;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .program{padding-left: 20px; float: left; padding-bottom: 15px; width: 49%; border-left: 3px solid #8a0811;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .program a{max-width: 45%; line-height: 18px; font-size: 20px; line-height: 20px;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul li .program a>span{font-size: 16px;}
+    /* last li*/
+    .footer_wrap .footer_schedule_section .footer_schedule ul .last_li{float: right; width: 100%;}
+    .footer_wrap .footer_schedule_section .footer_schedule ul .last_li .see_schedule_box{float: left; margin-left: 45%; padding-left: 21px; width: 50%; border-left: 3px solid #8a0811;}
+/*    .footer_wrap .footer_schedule_section .footer_schedule ul li .see_schedule{font-size: 20px;} */
+
+    .footer_nav_section{padding: 40px 50px;}
+    .footer_nav_inner{float: right; width: 41%;}
+    .footer_nav_inner .footer_nav_link{text-align: right;}
+    .footer_nav_inner .footer_nav_link li{display:inline-block; margin: 0 0 20px 10px;}
+    .footer_nav_inner .footer_nav_link li a{}
+    .footer_nav_inner .footer_nav_icon{float: right;}
+    .footer_nav_inner .footer_nav_icon li{margin-top: 0;}
+    .footer_nav_inner .footer_nav_icon .youtube_icon{margin-right: 0;}
+    .footer_nav_section .footer_disclimer{width: 55%;}
+    .footer_nav_section .footer_disclimer p{line-height: 16px;}
+}
+
+@media screen and (min-width:1200px) {
+    .header{height: auto; padding: 0 70px; background-color: transparent;}
+    .header .header_inner{margin: 0 auto; padding: 42px 0px; max-width: 1440px; border: none; border-width: 0;}
+    .header h1{float: left; height: 25px; text-align: center;}
+    .header h1 a{display: inline-block; width: 93px; height: 33px;}
+
+    .header .search_area input{top: 37px;}
+    .header .search_icon{display: block; position: absolute; top: 45px; right: 30px; width: 22px; height: 22px; background: url(../imgs/search.png) no-repeat center center; background-size: contain; text-indent: -9999px;}
+
+
+    .header .gnb{float: left; margin-top: 1px;}
+    .header .gnb .menu_icon{display: none;}
+    .header .gnb .menu_list{position: static; top: 0; left: 0;  width: 100%; padding-top: 0; z-index: 10; background-color: transparent;}
+    .header .gnb .menu_list ul{float: left; line-height: 33px;}
+    .header .gnb .menu_list li{float: left;}
+    .header .gnb .menu_list li a{display: block; float: left; padding: 0; font-weight: 400;}
+
+    .header .gnb .menu_list .sub_1{margin-left: 10px;}
+    .header .gnb .menu_list .sub_1 li{padding: 0 8px;}
+    .header .gnb .menu_list .sub_1 li:first-child{display: none;}
+    .header .gnb .menu_list .sub_1 .menu_comedy{padding-bottom: 0;}
+    .header .gnb .menu_list .sub_2{display: none;}
+    .header .gnb .menu_list .sub_3{position: static; padding-right: 0px; float: right; line-height: 33px; background-color: transparent;}
+    .header .gnb .menu_list .sub_3 li{margin: -2px 8px;}
+    .header .gnb .menu_list .sub_3 li:first-child{padding: 2px 13px; background-color: #B10000; border-radius: 20px; }
+    .header .gnb .menu_list .sub_3 .schedules{display: block; padding-left: 30px; background: url(../imgs/schedules.svg) no-repeat center left;}
+
+    .store_wrap{padding: 0 100px 0;}
+
+    .footer_schedule_section{padding: 80px 100px;}
+    .footer_nav_section{padding: 40px 100px;}
+}
+
+
+
+

@@ -1,0 +1,100 @@
+<반응형 스터디 스케줄>
+
+
+벤치마킹 사이트 http://www.sho.com/
+사이트 전체를 작업하는것이 아니라 각 섹션별로 조각내서 부분적으로 진행
+섹션별 4주 예상 (매주 금요일 3시간 X 4일)
+
+코드 규칙은 http://darum.daum.net/ 을 따른다.
+https://blisk.io/ (반응형 사이트 제작에 도움이 되는 브라우저)
+반응형 관련 정보 참고
+http://screensiz.es/ (모바일 스크린사이즈 정리)
+http://blog.naver.com/PostView.nhn?blogId=dmssla1211&logNo=192871991 (반응형 웹디자인/모바일 퍼스트 이해)
+http://d2.naver.com/helloworld/81480 (반응형 웹 입문자을 위한 글)
+http://readme.skplanet.com/?p=9739 (반응형 웹 기술 이해 - 정찬명님)
+
+http://www.flaticon.com (무료 아이콘 사이트. 원하는 색상으로 다운로드 가능)
+폰트관련
+제가 잘 못 안것 같아서 다시 정리해서 오께요ㅎㅎㅎㅎㅎ
+
+근데… 우리 사이트는 안돼서….
+www.sho.com의 경우는 아래의 코드를 삽입 해주시면 적용됩니다.
+
+
+@font-face{font-family:ff-din-web;src:url(https://use.typekit.net/af/917dae/00000000000000003b9acbe7/27/l?subset_id=2&fvd=n7) format("woff2"),url(https://use.typekit.net/af/917dae/00000000000000003b9acbe7/27/d?subset_id=2&fvd=n7) format("woff"),url(https://use.typekit.net/af/917dae/00000000000000003b9acbe7/27/a?subset_id=2&fvd=n7) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:ff-din-web;src:url(https://use.typekit.net/af/a54ffb/00000000000000003b9acbf8/27/l?subset_id=2&fvd=n4) format("woff2"),url(https://use.typekit.net/af/a54ffb/00000000000000003b9acbf8/27/d?subset_id=2&fvd=n4) format("woff"),url(https://use.typekit.net/af/a54ffb/00000000000000003b9acbf8/27/a?subset_id=2&fvd=n4) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:ff-din-web;src:url(https://use.typekit.net/af/57eff1/00000000000000003b9acbf3/27/l?subset_id=2&fvd=i4) format("woff2"),url(https://use.typekit.net/af/57eff1/00000000000000003b9acbf3/27/d?subset_id=2&fvd=i4) format("woff"),url(https://use.typekit.net/af/57eff1/00000000000000003b9acbf3/27/a?subset_id=2&fvd=i4) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:ff-din-web;src:url(https://use.typekit.net/af/735a48/00000000000000003b9acbf7/27/l?subset_id=2&fvd=i6) format("woff2"),url(https://use.typekit.net/af/735a48/00000000000000003b9acbf7/27/d?subset_id=2&fvd=i6) format("woff"),url(https://use.typekit.net/af/735a48/00000000000000003b9acbf7/27/a?subset_id=2&fvd=i6) format("opentype");font-weight:600;font-style:italic;}@font-face{font-family:ff-din-web;src:url(https://use.typekit.net/af/252264/00000000000000003b9acbf6/27/l?subset_id=2&fvd=n6) format("woff2"),url(https://use.typekit.net/af/252264/00000000000000003b9acbf6/27/d?subset_id=2&fvd=n6) format("woff"),url(https://use.typekit.net/af/252264/00000000000000003b9acbf6/27/a?subset_id=2&fvd=n6) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:ff-din-web;src:url(https://use.typekit.net/af/6996fc/00000000000000003b9acbe5/27/l?subset_id=2&fvd=n9) format("woff2"),url(https://use.typekit.net/af/6996fc/00000000000000003b9acbe5/27/d?subset_id=2&fvd=n9) format("woff"),url(https://use.typekit.net/af/6996fc/00000000000000003b9acbe5/27/a?subset_id=2&fvd=n9) format("opentype");font-weight:900;font-style:normal;}
+
+
+
+반응형 패딩 비율
+https://hyeonseok.com/soojung/css/2012/08/22/712.html
+
+https://melomano.wordpress.com/2013/08/18/%EB%B9%84%EC%9C%A8%EC%9D%B4-%ED%95%AD%EC%83%81-%EC%9D%BC%EC%A0%95%ED%95%98%EA%B2%8C-%EC%9C%A0%EC%A7%80%EB%90%98%EB%8A%94-box/
+
+http://rwdb.kr/ratio_calc/
+
+환경 설정 [
+node.js http-server npm 설치
+npm 홈페이지 들어가서 http-server 검색해서 설치
+ex) http://192.168.10.55:8080/index
+작업 툴 설치 (에디터 / 포토샾)
+파이어폭스 px 체크 부가기능
+https://addons.mozilla.org/ko/firefox/addon/measureit/?src=search (파폭용)
+https://chrome.google.com/webstore/detail/measureit/pokhcahijjfkdccinalifdifljglhclm?utm_source=chrome-ntp-icon (크롬용)
+이미지 다운 (한꺼번에 다운 받을 수 있는 방법 모색...)
+]
+
+현행 사이트 코드 분석
+생략 가능
+디자인만 보고 작업하기 어려운 사람은 소스 참고 가능
+HTML5 마크업 작성 [
+퍼블리싱 가이드 (다룸 사이트 참고)
+ie8 고려해서 respond.js추가
+ie8에서 html5태그를 사용하려면 html5shiv 추가
+mobile first
+]
+
+HTML 마크업 코드 리뷰
+크로스 브라우징 ie8+, 크롬, 파폭, 오페라, 사파리
+마크업 선행화 
+의미와 구조있게 작업
+
+css 작성(mobile first) [
+모바일 최소 사이즈 및 미디어쿼리 분기점
+320px, 480px, 768px, 992px, 1200px
+    16일까지 480px 끝 (안해오면 스터디원 커피사주기!!!!)
+    23일까지 768px 끝
+    30일 연휴 =====
+    2/6일까지 992px 끝
+    2/13일 1200px 끝과 함께 리뷰
+reset.css 설정
+미디어쿼리 분기점(현행 사이트처럼)
+]
+
+js 
+
+전체 코드리뷰
+
+sho.com 미디워 쿼리 
+         
+모바일 퍼스트로 되어져 있고, 479px 까지는 미디어 쿼리 없이 css 작성을 하면되고
+
+@media screen and (min-width: 480px){
+  min-width 480은 아이폰 4가로모드 봤을때 size가 480 입니다.
+ 왠만한 스마트폰 가로모드는 min-width: 480px 스타일을 먹겠네요
+}
+    
+@media screen and (min-width: 768px){
+        태블릿
+}     
+
+@media screen and (min-width: 992px){
+    작은 pc
+}
+
+
+@media screen and (min-width: 1200px){    
+        와이드 pc
+}
+
+ 
+

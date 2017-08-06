@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partial/head %>
+</head>
+<body>
+    <div class="header">
+        <% include ../partial/nav %>
+    </div>
+    <div class="container show">
+        <div class="container_inner">
+            <h3>Detail Post</h3>
+            <h3 class="post_title"><%= data.title %></h3>
+            <p class="post_body"><%= data.body %></p>
+            <div class="time">Created At: <%= data.created_at.toLocaleDateString() %>  <%= data.created_at.toLocaleTimeString() %>
+            </div>
+            <% if (data.updated_at) { %>
+            <div class="time">Updated At: <%= data.updated_at.toLocaleDateString() %>  <%= data.updated_at.toLocaleTimeString() %>
+            </div>
+            <% } %>
+            <a href="/board" class="btn_showBack">back</a>
+            <% if (user && user._id == data.author) { %>
+            <div class="tools">
+                <a href="/board/update/<%= data._id %>" class="btn btn_edit">edit</a>
+                <a href="/board/delete/<%= data._id %>" class="btn">delete</a>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

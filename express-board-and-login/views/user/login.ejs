@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partial/head %>
+</head>
+<body>
+    <div class="header">
+        <% include ../partial/nav %>
+    </div>
+    <div class="container">
+        <h2 class="title">LOGIN</h2>
+        <div class="form_area login">
+            <form class="user-form form-horizontal" action="/users/login" method="post">
+                <div class="contentBox">
+                    <fieldset>
+                        <div class="fg form-group">
+                            <label class="col-sm-3 mylabel control-label">Email</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" name="email"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 mylabel control-label">Password</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="password" name="password"/>
+                            </div>
+                        </div>
+                        <div class="btn_box btns_login">
+                            <button class="btn btn_login" type="submit">Login</button>
+                            <a class="btn btn_signUp" href="/users/signup">Sign Up</a>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        <div>
+    </div>
+   </body>
+</html>

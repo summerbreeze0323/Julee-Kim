@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partial/head %>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <% include ../partial/nav %>
+        </div>
+        <div class="container">
+            <div class="table-responsive table_wrap">
+                <table class="table">
+                    <colgroup>
+                        <col style="width:10%">
+                        <col>
+                        <col style="width:15%">
+                        <col style="width:5%">
+                        <col style="width:15%">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th class="title">Title</th>
+                        <th class="author">Writer</th>
+                        <th class="views">views</th>
+                        <th class="date">Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <% if(posts == null || posts.length == 0){ %>
+                        <tr>
+                            <td class="noData"> 등록된 게시물이 없습니다.</td>
+                        </tr>
+                    <% } %>
+                    <% var i = 0; %>
+                    <% posts.forEach( function (post) { %>
+                        <tr>
+                            <td>
+                                <%= i = i+1 %>
+                            </td>
+                            <td>
+                                <a class="boardTitle" href="/board/show/<%= post._id %>"><%= post.title %></a>
+                            </td>
+                            <td>
+                                <%= post.writer %>
+                            </td>
+                            <td>
+                                <%= post.views %>
+                            </td>
+                            <td>
+                                <%= post.created_at.toLocaleDateString() %>
+                            </td>
+                        </tr>
+                    <% }) %>
+                    </tbody>
+                </table>
+                <ul class="page">
+                    <% for(var i=1; i<=pagination; i++){ %>
+                        <% if(search_text) { %>
+                          <li><a href="/board?search_type=<%= search_type %>&search_text=<%= search_text %>&page=<%=i%>" class="next-page"><%=i%></a></li>
+                        <% } else { %>
+                          <li><a href="/board?page=<%=i%>" class="next-page"><%=i%></a></li>
+                        <% } %>
+                    <%}%>
+                </ul>
+            </div>
+            <div class="search_area">
+                <form action="/board" method="get">
+                    <select name="search_type">
+                        <option value="title">title</option>
+                        <option value="body">body</option>
+                        <option value="title+body">title+body</option>
+                        <option value="writer">writer</option>
+                    </select>
+                    <input type="text" name="search_text" value="<%= search_text %>"/>
+                </form>
+            </div>
+            <% if (user) { %>
+            <div class="btn_wrap">
+                <a href="/board/create">new</a>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

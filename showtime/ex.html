@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://helloworld.naver.com/respond.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">   
+    <meta charset="UTF-8">
+    <style>
+        /* reset */
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,input,button{margin:0; padding:0;}
+html,body{width:100%; color:#fff;}
+body{background-color: #000;}
+body,tr,th,td,input,button{font:16px "나눔고딕",nanumgodic,sans-serif;}
+img{max-width: 100%;}
+img,fieldset{border:none;}
+input{border: none;}
+a{text-decoration: none; color: #fff; outline: 0;}
+ul,ol,li{list-style: none;}
+strong,em{font-weight: normal; font-style: normal;}
+        body{background-color: #fff;
+        }
+        .nav-wrap{
+            background-color:#000;
+            text-align: center;
+            line-height: 25px;/*로고 세로 정렬떄문에 씀. position은 안먹음*/
+            padding: 15px;
+        }
+        .nav-area{
+            position: relative;
+/*            background-color: blueviolet;    */
+            height: 25px;
+        }
+        .home_btn{
+            display: inline-block;
+            background: url(imgs/menu-btn.svg) no-repeat center center;
+            background-size: cover;
+            width: 20px;
+            height: 25px;
+            position: absolute;
+            left: 0;
+        }
+        h1{
+            display: inline-block;
+/*            line-height: 25px;*/
+        }
+        .logo{
+            background: url(imgs/showtime-logo.svg) no-repeat center center;
+            width: 70px;
+            height: 24.5px;
+            display: inline-block;
+        }
+        .search{
+            display: inline-block;  
+            background: url(imgs/search.png) no-repeat center center;
+            background-size: contain;
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            right: 0;
+        }
+    </style>
+    <title>SHOTIME Official Site</title>
+</head>    
+<body>
+    <div class="nav-wrap">
+        <div class="nav-area">
+            <a class="home_btn"></a>
+            <h1><a class="logo"></a></h1>
+            <a class="search"></a>
+        </div>
+    </div>
+</body>

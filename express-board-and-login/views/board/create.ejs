@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partial/head %>
+</head>
+<body>
+    <div class="header">
+        <% include ../partial/nav %>
+    </div>
+    <div class="container">
+        <div class="container_inner">
+            <div class="create">
+                <h3 class="createTitle">Create Post</h3>
+                <form class="create_form" action="/board/create" method="post">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" class="form-control" name="title" value="">
+                    </div>
+                    <div class="form-group">
+                        <label>Body</label>
+                        <textarea name="content" class="form-control textArea"></textarea>
+                    </div>
+                    <div class="button_box">
+                        <button type="submit" class="btn">Submit</button>
+                        <a href="/board" class="btn btn_back">Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<footer>
+
+</footer>
+</body>
+</html>
