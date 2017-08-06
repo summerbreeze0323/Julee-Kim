@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">   
+    <meta charset="UTF-8">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/master.css" rel="stylesheet">
+    <title>Hiyoujeju Admin</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://helloworld.naver.com/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/coupons/coupon.js"></script>
+</head>
+<body>
+    <div class="all_wrap">
+        <div class="nav_wrap">
+            <ul class="nav">
+                <h1 class="nav_brand">
+                    하이요제주 백오피스
+                </h1>
+                <li>
+                    <a href="../index.html">홈</a>    
+                </li>
+                <li>
+                    <a href="../casts/index.html">캐스트</a>
+                </li>
+                <li>
+                    <a href="../promotions/index.html">프로모션</a>
+                </li>
+                <li>
+                    <a href="index.html">쿠폰</a>
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+            </ul>
+        </div><!-- nav_wrap --> 
+        <div class="container">
+            <h1>새 쿠폰</h1>
+            <div class="contents_box">
+                <form id="" action="" method="post">
+                    <fieldset>
+                        <legend class="hide">new coupon</legend>
+                        <div class="line">
+                            <label>Web url : </label>
+                            <input class="webUrl" type="text">
+                        </div>
+                        <div class="line">
+                            <label>Thumbnail url : </label>
+                            <input class="thumbnail" type="text">
+                        </div>
+                        <div class="line">
+                            <label>Coupon name : </label>
+                            <input class="name" type="text">
+                        </div>
+                        <div class="price_wrap">
+                            <table class="priceTable">
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="40%">
+                                    <col width="40%">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th></th>
+                                    <th>정가</th>
+                                    <th>할인가</th>
+                                </tr>
+                                <tr>
+                                    <th>성인</th>
+                                    <td><input class="a_ori_price" type="text"></td>
+                                    <td><input class="a_dis_price" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th>청소년</th>
+                                    <td><input class="y_ori_price" type="text"></td>
+                                    <td><input class="y_dis_price" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th>어린이</th>
+                                    <td><input class="c_ori_price" type="text"></td>
+                                    <td><input class="c_dis_price" type="text"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <table class="tags_box">
+                                <colgroup>
+                                    <col width="14.28%">
+                                    <col width="14.28%">
+                                    <col width="14.28%">
+                                    <col width="14.28%">
+                                    <col width="14.28%">
+                                    <col width="14.28%">
+                                    <col width="14.28%">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td><label><input type="checkbox" value="NoBoxOffice">NoBoxOffice</label></td>
+                                    <td><label><input type="checkbox" value="FilmSite"></label>FilmSite</td>
+                                    <td><label><input type="checkbox" value="Museum"></label>Museum</td>
+                                    <td><label><input type="checkbox" value="Exhibition"></label>Exhibition</td>
+                                    <td><label><input type="checkbox" value="ThemePark"></label>ThemePark</td>
+                                    <td><label><input type="checkbox" value="Leisure"></label>Leisure</td>
+                                    <td><label><input type="checkbox" value="Experience"></label>Experience</td>
+                                </tr>
+                                <tr>
+                                    <td>매표소앞구매불가</td>
+                                    <td>방송촬영지</td>
+                                    <td>박물관</td>
+                                    <td>전시</td>
+                                    <td>테마공원</td>
+                                    <td>레저</td>
+                                    <td>체험</td>
+                                </tr>
+                                <tr>
+                                    <td><label><input type="checkbox" value="Submarine"></label>Submarine</td>
+                                    <td><label><input type="checkbox" value="Cruise"></label>Cruise</td>
+                                    <td><label><input type="checkbox" value="Show"></label>Show</td>
+                                    <td><label><input type="checkbox" value="Performance"></label>Performance</td>
+                                    <td><label><input type="checkbox" value="Food"></label>Food</td>
+                                    <td><label><input type="checkbox" value="Etc"></label>Etc</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>유람선</td>
+                                    <td>크루즈</td>
+                                    <td>쇼</td>
+                                    <td>공연</td>
+                                    <td>음식</td>
+                                    <td>기타</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_wrap">
+                            <button class="btn btn_save" type="submit">SAVE</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div> 
+        </div> 
+    </div>
+    <script src="../js/coupons/new.js"></script>
+</body>
+</html>

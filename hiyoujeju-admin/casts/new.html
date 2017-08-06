@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">   
+    <meta charset="UTF-8">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/master.css" rel="stylesheet">
+    <title>Hiyoujeju Admin</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://helloworld.naver.com/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/casts/cast.js"></script>
+</head>
+<body>
+    <div class="all_wrap">
+        <div class="nav_wrap">
+            <ul class="nav">
+                <h1 class="nav_brand">
+                    하이요제주 백오피스
+                </h1>
+                <li>
+                    <a href="../index.html">홈</a>    
+                </li>
+                <li>
+                    <a href="index.html">캐스트</a>
+                </li>
+                <li>
+                    <a href="../promotions/index.html">프로모션</a>
+                </li>
+                <li>
+                    <a href="../coupons/index.html">쿠폰</a>
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+            </ul>
+        </div><!-- nav_wrap --> 
+        <div class="container">
+            <h1>새 캐스트</h1>
+            <div class="contents_box">
+                <form id="addNewCast" action="/casts/new" method="post">
+                    <fieldset>
+                        <legend class="hide">new casts</legend>
+                        <div class="line">
+                            <label>Title : </label>
+                            <input class="brief" type="text">
+                        </div>
+                        <div class="line">
+                            <label>ThumbnailUrl : </label>
+                            <input class="thumbnail" type="text">
+                        </div>
+                        <div class="btn_wrap">
+                            <button class="btn btn_save" type="submit">SAVE</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div> 
+        </div> 
+    </div> 
+    <script src="../js/casts/new.js"></script>  
+</body>
+</html>

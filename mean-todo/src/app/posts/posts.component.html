@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="contents">
+    <div class="add_post clearfix">
+      <input #content type="text" placeholder="Please enter a schedule.">
+      <button class="btn btn_add" (click)="add(content.value); content.value=''">ADD</button>
+    </div>
+    <ul class="post_list">
+      <li *ngFor="let post of posts">
+        <div class="post_area clearfix" *ngIf="selectedPost !== post; else elseBlock" >
+          <p>{{post.content}}</p>
+          <div class="btn_box">
+            <button class="btn first_btn" (click)="onSelect(post)">EDIT</button>
+            <button class="btn" (click)="delete(post._id)">DELETE</button>
+          </div>
+        </div>
+        <ng-template class="post_area" #elseBlock>
+          <input class="update_input" focus="true" [(ngModel)]="selectedPost.content" type="text">
+          <div class="btn_box">
+            <button class="btn" (click)="update()">SAVE</button>
+            <button class="btn" (click)="goBack()">CANCEL</button>
+          </div>
+        </ng-template>
+      </li>
+    </ul>
+  </div>
+</div>

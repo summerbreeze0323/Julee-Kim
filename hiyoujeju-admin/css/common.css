@@ -1,0 +1,141 @@
+/* reset */
+
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,input,button{margin:0; padding:0; color:#000;}
+html,body{width:100%;}
+body,tr,th,td,input,button{font:16px Arial, "Helvetica Neue", Helvetica, sans-serif;}
+select{font-size: 14px;}
+img{max-width: 100%;}
+img,fieldset{border:none;}
+a{text-decoration: none; color: #000;}
+ul,ol,li{list-style: none;}
+strong,em{font-weight: normal; font-style: normal;}
+h1{margin-bottom: 35px;}
+
+/* common */
+.hide{display: none;}
+.screen_out{text-indent: -9999px; overflow: hidden; width:0; height: 0; display:block;}
+.clearfix:after{content:"."; clear:both; display: block; width:0; height: 0; overflow: hidden;}
+.all_wrap{padding-left: 250px; background-color: #fbfbfb;}
+.container{margin: 0 auto; padding: 40px; max-width: 900px; box-sizing: border-box;}
+.wrap{position: relative;}
+
+
+/* nav */
+.nav_wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 50px;
+    width: 250px;
+    height: 100%;
+    background-color: #2A3F54;
+}
+
+.nav_wrap .nav h1{
+    margin-bottom: 0;
+    color: #fff;
+    text-indent: 40px;
+    height: 50px;
+    font-size: 18px;
+}
+.nav_wrap .nav li{
+    color: #fff;
+    text-indent: 30px;
+    line-height: 55px;
+}
+
+.nav_wrap .nav li a:hover{
+    color: #1fe6c0;
+}
+
+.nav_wrap .nav li a{
+    padding: 10px;
+    color: #fff;
+}
+
+/* table */
+.table_wrap{
+    box-sizing: border-box;
+}
+
+table{
+    display: none;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, td{
+    padding: 20px;
+    border: 1px solid #cecece;
+    text-align: center;
+}
+
+table thead{
+    background-color: #f3f3f3;
+}
+
+table tbody{
+    background-color: #fff;
+}
+
+table thead tr th{
+    font-weight: 600;
+}
+
+
+/* pagination */
+.pagination>ul{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination>ul>li{
+    display: inline-block;
+    margin: 0 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+/* btn */
+.btn_wrap{
+    margin: 10px 0 40px;;
+    text-align: right;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 32px;
+    color: #fff;
+    border: 2px solid #e7e7e7;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn_new{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn_save{
+    right: 0;
+    bottom: 0;
+    background-color: #286090;
+    border-color: #2e6da4;
+}
+.btn_delete{
+    right: 0;
+    bottom: 0;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+
+/* selected */
+.select_table{
+    display: table;
+}
+
+.select_pageNum{
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+image: abesiyo/s3
+
+pipelines:
+    default:
+       - step:
+          script:
+             - s3 --region "ap-northeast-2" rm s3://qinghuo.snapbak-studios.com
+             - s3 --region "ap-northeast-2" sync . s3://qinghuo.snapbak-studios.com

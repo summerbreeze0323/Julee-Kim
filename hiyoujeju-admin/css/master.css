@@ -1,0 +1,233 @@
+/* -------------------------- CAST --------------------------*/
+
+/* Cast List */
+.cast_container{
+    width: 800px;
+}
+
+
+/* Create (Promotion도 같음) */
+.contents_box{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.contents_box .line{
+    margin-bottom: 50px;
+}
+
+.contents_box .line label{
+    display: inline-block; 
+    margin-bottom: 5px;
+}
+
+.contents_box .line input{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 6px 12px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-sizing: border-box;
+}
+
+
+/* Show Cast */
+.show_form{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.list{
+    margin-bottom: 30px;
+}
+
+.list li{
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.list li .label{
+    float: left;
+    display: block;
+    height: 30px;
+    line-height: 22px;    
+}
+
+.list li p{
+    float: left;
+    width: 600px;
+    margin: 0 0 20px 10px;
+    line-height: 22px;
+}
+
+.label_brief{
+    width: 45px;
+}
+
+.label_thumbnail{
+    width: 110px;
+}
+
+.label_thumbnailImage{
+    margin-right: 10px;
+}
+
+.thumb_img{
+    display: block;
+    width: 80%;
+}
+
+
+
+/* -------------------------- PROMOTION --------------------------*/
+
+/* Show Promotion */
+.show_container{
+    width: 800px;
+}
+
+.label_status{
+    width: 55px;
+}
+
+.label_banner{
+    width: 83px;
+}
+
+.label_bannerImage{
+    margin-right: 10px;
+}
+
+.banner_img{
+    display: block;
+    width: 83%;
+}
+
+/* Create Promotions */
+#status{
+    padding: 7px;
+    width: 150px;
+}
+
+
+/* -------------------------- COUPON --------------------------*/
+
+/* Coupon List */
+.coupon_container .table_wrap tbody tr td span{
+    color: #474E55;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+
+/* Show Coupon */
+.coupon_contents{
+    margin-bottom: 50px;
+}
+
+.content_box{
+    float: left;
+    margin-right: 2%;
+    width: 35%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.content_box img{
+    display: block;
+    margin: 2%;
+    width: 96%;
+}
+
+.content_box .name{
+    padding: 5%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.content_box p{
+    padding: 3%;
+    border-top: 1px solid #ddd;
+}
+
+.price_table{
+    display: table;
+    width: 63%;
+    height: 100%;
+}
+
+.url_box{
+    margin-bottom: 40px;
+}
+
+.url_box span,.url_box p{
+    display: inline-block;
+}
+
+
+/* New Coupon */
+.price_wrap{
+    margin-bottom: 50px;
+}
+
+.priceTable{
+    display: table;
+}
+
+.priceTable tr td{
+    padding: 0;
+}
+
+.priceTable tr td input{
+    padding: 0 40px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.tags_box{
+    display: table;
+    table-layout: fixed;
+}
+.tags_box tr:nth-child(2n-1) td{
+    background:#b6c3d4;
+    color:#424141;
+}
+.tags_box td{
+    padding: 20px 0px;
+}
+.tags_box input[type="checkbox"]{
+    margin-right:4px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

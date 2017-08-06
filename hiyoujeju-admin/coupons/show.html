@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">   
+    <meta charset="UTF-8">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/master.css" rel="stylesheet">
+    <title>Hiyoujeju Admin</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://helloworld.naver.com/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/coupons/coupon.js"></script>
+</head>
+<body>
+    <div class="all_wrap"> 
+        <div class="nav_wrap">
+            <ul class="nav">
+                <h1 class="nav_brand">
+                    하이요제주 백오피스
+                </h1>
+                <li>
+                    <a href="../index.html">홈</a>    
+                </li>
+                <li>
+                    <a href="../casts/index.html">캐스트</a>
+                </li>
+                <li>
+                    <a href="../promotions/index.html">프로모션</a>
+                </li>
+                <li>
+                    <a href="index.html">쿠폰</a>
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+            </ul>
+        </div><!-- nav_wrap -->         
+        <div class="container">
+            <h1>Show Coupon</h1>
+            <form action="" class="">
+                <fieldset>
+                    <legend class="hide">show coupon</legend>
+                    <div class="coupon_contents clearfix">
+                        <div class="content_box">
+                            <img src="" class="thumbnail_img" alt="thumbnailImage">
+                            <h3 class="name"></h3>
+                            <p class="tags"></p>
+                        </div>
+                        <table class="price_table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">정가</th>
+                                    <th scope="col">할인가</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">성인</th>
+                                    <td class="a_ori_price ori_price"></td>
+                                    <td class="a_dis_price dis_price"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">청소년</th>
+                                    <td class="y_ori_price ori_price"></td>
+                                    <td class="y_dis_price dis_price"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">어린이</th>
+                                    <td class="c_ori_price ori_price"></td>
+                                    <td class="c_dis_price dis_price"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="url_box">
+                        <span class="label_webUrl">Web url :</span>
+                        <p class="webUrl"></p>
+                    </div>
+                    <div class="url_box">
+                        <span class="label_thumbnail">Thumbnail url :</span>
+                        <p class="thumbnail"></p>
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="btn btn_delete" type="submit">DELETE</button>
+                    </div>
+                </fieldset>
+            </form>    
+        </div>
+    </div>
+    <script src="../js/coupons/show.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">   
+    <meta charset="UTF-8">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/master.css" rel="stylesheet">
+    <title>Hiyoujeju Admin</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://helloworld.naver.com/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../js/promotions/promotion.js"></script>
+</head>
+<body>
+    <div class="all_wrap"> 
+        <div class="nav_wrap">
+            <ul class="nav">
+                <h1 class="nav_brand">
+                    하이요제주 백오피스
+                </h1>
+                <li>
+                    <a href="../index.html">홈</a>    
+                </li>
+                <li>
+                    <a href="../casts/index.html">캐스트</a>
+                </li>
+                <li>
+                    <a href="index.html">프로모션</a>
+                </li>
+                <li>
+                    <a href="../coupons/index.html">쿠폰</a>
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+                <li>
+                    <a href="#">준비 중</a>    
+                </li>
+            </ul>
+        </div><!-- nav_wrap -->         
+        <div class="container show_container">
+            <h1>Show Promotion</h1>
+            <form action="" class="show_form">
+                <fieldset>
+                    <legend class="hide">show promotion</legend>
+                    <ul class="list clearfix">
+                        <li>
+                            <span class="label label_status">Status :</span>
+                            <p class="status"></p>
+                        </li>
+                        <li>
+                            <span class="label label_banner">Banner url :</span>
+                            <p class="banner"></p>
+                        </li>
+                        <li>
+                            <span class="label label_bannerImage">Banner image : </span>
+                            <img src="" class="banner_img" alt="bannerImage">
+                        </li>
+                    </ul>
+                    <div class="btn_wrap">
+                        <button class="btn btn_delete" type="submit">DELETE</button>
+                    </div>
+                </fieldset>
+            </form>    
+        </div>
+    </div>
+    <script src="../js/promotions/show.js"></script>
+</body>
+</html>

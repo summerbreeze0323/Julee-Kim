@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">   
+    <meta charset="UTF-8">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/master.css" rel="stylesheet">
+    <title>Hiyoujeju Admin</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://helloworld.naver.com/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="../js/coupons/coupon.js"></script>
+</head>
+<body>
+    <div class="all_wrap">   
+        <div class="nav_wrap">
+            <ul class="nav">
+                <h1 class="nav_brand">
+                    하이요제주 백오피스
+                </h1>
+                <li>
+                    <a href="../index.html">홈</a>
+                </li>
+                <li>
+                    <a href="../casts/index.html">캐스트</a>
+                </li>
+                <li>
+                    <a href="../promotions/index.html">프로모션</a>
+                </li>
+                <li>
+                    <a href="index.html">쿠폰</a>
+                </li>
+                <li>
+                    <a href="#">준비 중</a>
+                </li>
+                <li>
+                    <a href="#">준비 중</a>
+                </li>
+            </ul>
+        </div>
+        <!-- nav_wrap -->
+        <div id="table_container" class="container coupon_container">
+            <h1>쿠폰</h1>
+            <div class="table_wrap">
+                <table v-for="(page, pageIndex) in pages" v-bind:class="[pageIndex == selectedPageIndex ? 'select_table' : '', 'promo_table']">
+                    <colgroup>
+                        <col width="2%">
+                        <col width="50%">
+                        <col width="13%">
+                        <col width="35%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Coupon Name</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(item, itemIndex) in page">
+                            <td>{{ 1 + itemIndex + pageIndex * itemsInPage }}</td>
+                            <td><a :href="'show.html?id=' + item.id">{{ item.name }}</a></td>
+                            <td><span>{{ item.priceTable.adult.originalPriceKrw }}</span>  {{ item.priceTable.adult.discountedPriceKrw }}</td>
+                            <td>{{ item.createdAt | newDate | toLocaleString }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- table_wrap -->
+            <div class="pagination">
+                <ul>
+                    <li v-for="(pageNumber, index) in pages.length" v-on:click="selectedPageIndex = index" v-bind:class="[index == selectedPageIndex ? 'select_pageNum' : '']">{{ pageNumber }}</li>
+                </ul>
+            </div>
+            <div class="btn_wrap">
+                <a href="new.html" class="btn btn_new">NEW</a>                
+            </div>
+        </div>
+        <!-- container -->
+    </div>
+    <script src="../js/coupons/index.js"></script>
+</body>
+</html>

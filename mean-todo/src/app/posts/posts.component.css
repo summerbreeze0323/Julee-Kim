@@ -1,0 +1,31 @@
+/* reset */
+body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,input,button{margin:0; padding:0; color: #292929;}
+html,body{width:100%;}
+body,tr,th,td,input,button{font:16px "나눔고딕",nanumgodic,sans-serif;}
+img{max-width: 100%;}
+img,fieldset{border:none;}
+input{border: #ddd;}
+a{text-decoration: none; color: #292929; outline: 0;}
+ul,ol,li{list-style: none;}
+strong,em{font-weight: normal; font-style: normal;}
+
+/* common */
+.hide{display: none;}
+.screen_out{text-indent: -9999px; overflow: hidden; width:0; height: 0; display:block;}
+.clearfix:after{content:"."; clear:both; display: block; width:0; height: 0; overflow: hidden;}
+
+
+.contents{width: 50%; min-width: 609px; margin: 0 auto;}
+
+.add_post{margin-bottom: 10px; border-bottom: 1px solid #e8e8e8;}
+input{padding: 8px 10px 5px; width: 85%;}
+.add_post .btn_add{float: right;}
+
+.post_list{}
+.post_list li{padding: 15px; height: 62px; border: 1px solid #e8e8e8; border-collapse : collapse; box-sizing: border-box;}
+.post_area p{float: left; margin: 7px 10px; line-height: 22px;}
+.btn_box{float: right; margin-top: 5px;}
+.btn{padding: 2px 0; width: 60px; font-size: 14px;}
+
+.update_input{width: 75%;}
+.update_input:focus{}
