@@ -1,3 +1,5 @@
+var window_width;
+
 $(document).ready(function(){
     var showMenuItem = new ShowMenu(".menu_icon", ".menu_list", "left");
 
@@ -5,6 +7,8 @@ $(document).ready(function(){
 
     var moveSlider = new Slider(".slider_section .slider_container");
 })
+
+
 
 /* 메뉴아이콘 클릭시 메뉴아이템이 보이게 하고, 검색아이콘 클릭시 Input태그 보이게 하기 */
 function ShowMenu(icon, moveItem, direction){
@@ -149,10 +153,14 @@ Slider.prototype.initEvent = function() {
 }
 
 Slider.prototype.moveSliderItem = function(direction) {
+    this.imgWidth = this.$moveItem.find("li:first").outerWidth();
     var totalImgWidth = this.imgWidth * this.numOfImgs; // ul 총 길이
-    var viewWidth = $(window).width();
+    var viewWidth = $(window).width();;
+    console.log(2 + ' ' + viewWidth);
     var lestWidth = (totalImgWidth - viewWidth) - Math.abs(this.currentLeft) + 15; // 15는 패딩값
-//    console.log("lestWidth: "+ lestWidth);
+    console.log("totalImgWidth: "+ totalImgWidth);
+    console.log("viewWidth: "+ viewWidth);
+    console.log("this.currentLeft: "+ this.currentLeft);
 
     if(direction === "right") {
         if(lestWidth > this.imgWidth) {
