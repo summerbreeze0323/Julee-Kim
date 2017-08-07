@@ -2,8 +2,10 @@
 
 포트폴리오 설명
 
-## [Sho](http://d2sekpvl5061e3.cloudfront.net/)
+## Sho
 
+* [git](https://github.com/summerbreeze0323/Kim-Ju-Lee/tree/master/showtime)
+* [demo](http://d2sekpvl5061e3.cloudfront.net/)
 * used skills : HTML5, CSS3, Javascript & Jquery, Responsive Web
 
 ## Qinghuo Games
