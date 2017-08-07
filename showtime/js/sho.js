@@ -5,9 +5,16 @@ $(document).ready(function(){
 
     var showSearchBar = new ShowMenu(".search_icon", ".search_area form input", "right");
 
+    $(window).resize(function() {
+        var window_width = $(window).width();
+        // search input이 열려있을 때만 resize
+        if (showSearchBar.isOn()) {
+            showSearchBar.resizeBox();
+        }
+    })
+
     var moveSlider = new Slider(".slider_section .slider_container");
 })
-
 
 
 /* 메뉴아이콘 클릭시 메뉴아이템이 보이게 하고, 검색아이콘 클릭시 Input태그 보이게 하기 */
@@ -19,13 +26,14 @@ function ShowMenu(icon, moveItem, direction){
 
     this.init(icon, moveItem, direction);
     this.initEvent();
+    this.on = false;
 }
 
 ShowMenu.prototype.init = function(icon, moveItem, direction){
     this.$Icon = $(icon);
     this.$box = $(moveItem);
     this.direction = direction;
-    this.windowWidth = $(window).width();
+//    this.windowWidth = $(window).width();
 }
 
 ShowMenu.prototype.initEvent = function(){
@@ -37,12 +45,14 @@ ShowMenu.prototype.initEvent = function(){
 }
 
 ShowMenu.prototype.openBox = function($item, direction){
+    this.windowWidth = $(window).width();
+
     var left = 0;
 
     $item.attr("data-extension", "open");
 
     $item.css({
-        "background-image" : "url(../imgs/cancel.png)",
+        "background-image" : "url(./imgs/cancel.png)",
         "background-size" : "contain"
     });
 
@@ -58,17 +68,59 @@ ShowMenu.prototype.openBox = function($item, direction){
 
         if (this.windowWidth >= 992 && this.windowWidth < 3000) {
             var searchAreaWidth = this.windowWidth * (75/100);
+            console.log("searchAreaWidth: " + searchAreaWidth);
 
             $(".search_area form").css("width", searchAreaWidth);
 
             left = 200;
         }
     }
+    console.log("left: " + left);
 
     this.$box.stop().animate({
         opacity : 1,
         left : left
     }, 200);
+}
+
+ShowMenu.prototype.resizeBox = function() {
+    this.windowWidth = $(window).width();
+
+    var left = 0;
+
+    this.$Icon.attr("data-extension", "open");
+
+    this.$Icon.css({
+        "background-image" : "url(./imgs/cancel.png)",
+        "background-size" : "contain"
+    });
+
+    if(this.direction  == "left"){
+        left = 0;
+    }else{
+        left = 15;
+        $(".gnb").css("display", "none");
+
+        if(this.windowWidth >= 768 && this.windowWidth <= 991) {
+            left = 50;
+        }
+
+        if (this.windowWidth >= 992 && this.windowWidth < 3000) {
+            var searchAreaWidth = this.windowWidth * (75/100);
+//            console.log("searchAreaWidth: " + searchAreaWidth);
+
+            $(".search_area form").css("width", searchAreaWidth);
+
+            left = 200;
+        }
+    }
+//    console.log("left: " + left);
+
+    this.$box.css({
+        opacity : 1,
+        left : left
+    });
+
 }
 
 ShowMenu.prototype.closeBox = function($item, direction){
@@ -86,7 +138,7 @@ ShowMenu.prototype.closeBox = function($item, direction){
         outerWidth = this.$box.outerWidth(true);
         width = outerWidth;
 
-        backgroundImage = "url(../imgs/search.png)";
+        backgroundImage = "url(./imgs/search.png)";
         bgSize = "contain";
         $(".gnb").css("display", "block");
 
@@ -107,11 +159,17 @@ ShowMenu.prototype.closeBox = function($item, direction){
 }
 
 ShowMenu.prototype.toggleBox = function($item, direction){
+    this.on = !this.on;
+
     if($item.attr("data-extension") == "open"){
         this.closeBox($item, direction);
     }else if($item.attr("data-extension") == "close"){
         this.openBox($item, direction);
     }
+}
+
+ShowMenu.prototype.isOn = function() {
+    return this.on;
 }
 
 /* ---------- ALL COMEDY에서 화살표 버튼을 눌렀을 때 슬라이더 이미지 이동 --------- */
@@ -156,11 +214,10 @@ Slider.prototype.moveSliderItem = function(direction) {
     this.imgWidth = this.$moveItem.find("li:first").outerWidth();
     var totalImgWidth = this.imgWidth * this.numOfImgs; // ul 총 길이
     var viewWidth = $(window).width();;
-    console.log(2 + ' ' + viewWidth);
     var lestWidth = (totalImgWidth - viewWidth) - Math.abs(this.currentLeft) + 15; // 15는 패딩값
-    console.log("totalImgWidth: "+ totalImgWidth);
-    console.log("viewWidth: "+ viewWidth);
-    console.log("this.currentLeft: "+ this.currentLeft);
+//    console.log("totalImgWidth: "+ totalImgWidth);
+//    console.log("viewWidth: "+ viewWidth);
+//    console.log("this.currentLeft: "+ this.currentLeft);
 
     if(direction === "right") {
         if(lestWidth > this.imgWidth) {
