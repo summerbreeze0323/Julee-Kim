@@ -11,7 +11,7 @@
 ## Qinghuo Games
 
 * [demo](http://qinghuo.snapbak-studios.com)
-* used skills : HTML5, CSS3, bootstrap
+* used skills : HTML5, CSS3, bootstrap, Responsive Web
 
 
 ## HiyouJeju admin
