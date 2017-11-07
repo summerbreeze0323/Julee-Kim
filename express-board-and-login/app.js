@@ -16,7 +16,7 @@ var passport = require('passport');
 var app = express();
 
 //DB setting
-var databaseUrl = 'mongodb://localhost/blog_1';
+var databaseUrl = 'mongodb://localhost/express-myboard';
 
 mongoose.connect(databaseUrl);
 var db = mongoose.connection;

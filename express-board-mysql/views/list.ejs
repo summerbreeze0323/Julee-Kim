@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+    <div class="all_wrap">
+      <% include ./partials/header.ejs %>
+      <h2>Board List</h2>
+        <div class="list_wrap">
+          <div class="contents_area">
+            <div class="search_area clearfix">
+              <form action="/search" method="get">
+                <select class="search_type" name="search_type">
+                  <option value="title">제목+내용</option>
+                  <option value="contents">내용</option>
+                  <option value="title_contents">제목</option>
+                </select>
+                <input type="text" name="search_text">
+                <button type="submit" class="btn_search">검색</button>
+              </form>
+            </div>
+            <div class="board_area">
+              <ul class="board clearfix">
+                <% if (data.length == 0) { %>
+                  <li class="no_data">등록된 게시글이 없습니다.</li>
+                <% } else { %>
+                  <% for (var i = 0; i < data.length; i++) { %>
+                    <li>
+                      <a href="/read/<%= data[i].idx %>">
+                        <p><%= data[i].created_at.toLocaleDateString() %></p>
+                        <h5><%= data[i].title %></h5>
+                      </a>
+                    </li>
+                  <% } %>
+                <% } %>
+              </ul>
+              <% if (total_page > 1) { %>
+                <ul class="page clearfix">
+                  <% for (var i = 0; i < total_page; i++) { %>
+                    <li>
+                      <a href="/list/?page=<%= i+1 %>">
+                        <%= i+1 %>
+                      </a>
+                    </li>
+                  <% } %>
+                </ul>
+              <% } else { %>
+                <ul class="page no_page">
+                  <li>1</li>
+                </ul>
+              <% } %>
+            </div>
+          </div>
+        </div><!-- end. contents_inner -->
+    </div><!-- END. all_wrap -->
+    <script>
+      var current_page = window.location.href.split('?')[1].split('=')[1]; //url에서 page의 값만 가져옴
+      var index = current_page - 1;
+
+      var $change_color = $('.page li').find('a').eq(index);
+      var $change_bg = $('.page li').eq(index);
+
+      $change_color.css('color', '#fff');
+      $change_bg.css('background-color', '#1a1a1a').siblings().css('background-color', 'transparent');
+      $change_bg.siblings().find('a').css('color', '#666');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+    <div class="all_wrap">
+      <% include ./partials/header.ejs %>
+      <h2>Read Contents</h2>
+        <div class="contents_wrap">
+          <div class="contents_area">
+            <span><%= data.created_at.toLocaleDateString() %></span>
+            <h4><%= data.title %></h4>
+            <p><%= data.content %></p>
+          </div>
+          <button class="goto_list" onclick="goBack()">목록</button>
+        </div>
+    </div><!-- end. all_wrap -->
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
