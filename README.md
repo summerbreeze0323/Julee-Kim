@@ -33,5 +33,5 @@
 # Express board - MySQL
 
 * used skills : HTML5, CSS3, Node.js, MySQL
-* 홈페이지 퍼블리싱과 , faq 백엔드 작업
+* 홈페이지 퍼블리싱과 새소식, faq 백엔드 작업
 * [Go to site](https://login.logintalk.kr/)
