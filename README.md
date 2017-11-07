@@ -30,7 +30,7 @@
 
 * used skills : HTML5, CSS3, Bootstrap, MEAN stack (*MongoDB, Express, Angular, Node.js*)
 
-# Express board - MySQL
+# 로그인톡 홈페이지
 
 * used skills : HTML5, CSS3, Node.js, MySQL
 * 홈페이지 퍼블리싱과 새소식, faq 백엔드 작업
