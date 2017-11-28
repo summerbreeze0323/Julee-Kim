@@ -3,11 +3,12 @@ const mongoose = require('mongoose');
 
 const router = express.Router();
 
-const Post = mongoose.model('post', {
+const Post = mongoose.model('todo_2', {
     content: String
 });
 
 router.get('/', (req, res) => {
+    // res.redirect('/posts');
     res.send('api works!');
 });
 

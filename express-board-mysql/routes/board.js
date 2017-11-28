@@ -60,7 +60,7 @@ router.get('/list', function(req, res) {
       });
     });
   });
-}
+});
 
 router.get('/read', function(req, res) {
   db_pool.getConnection(function(err, conn) {
@@ -84,7 +84,7 @@ router.get('/read', function(req, res) {
     });
 
   });
-}
+});
 
 router.get('/search', function(req, res) {
 
@@ -130,7 +130,7 @@ router.get('/search', function(req, res) {
       return res.render('list', {title: 'list', data: result, total_page: total_page});
     });
   });
-}
+});
 
 
 module.exports = router;

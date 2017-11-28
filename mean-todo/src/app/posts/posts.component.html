@@ -14,7 +14,7 @@
           </div>
         </div>
         <ng-template class="post_area" #elseBlock>
-          <input class="update_input" focus="true" [(ngModel)]="selectedPost.content" type="text">
+          <input autofocus="true" class="update_input" [(ngModel)]="selectedPost.content" type="text">
           <div class="btn_box">
             <button class="btn" (click)="update()">SAVE</button>
             <button class="btn" (click)="goBack()">CANCEL</button>

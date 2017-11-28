@@ -28,4 +28,4 @@ input{padding: 8px 10px 5px; width: 85%;}
 .btn{padding: 2px 0; width: 60px; font-size: 14px;}
 
 .update_input{width: 75%;}
-.update_input:focus{}
+.update_input:focus{outline:solid rgba(150,200,250,0.5) 2px}

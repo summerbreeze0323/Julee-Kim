@@ -1,14 +1,14 @@
-import { MeanTodoPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('mean-todo App', () => {
-  let page: MeanTodoPage;
+describe('mean-todo11 App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new MeanTodoPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

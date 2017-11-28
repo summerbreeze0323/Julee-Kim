@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { FocusModule } from 'angular2-focus';
+import { AutofocusModule } from 'angular-autofocus-fix'
 
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
@@ -17,7 +17,7 @@ import { PostService } from './post.service';
   ],
   imports: [
     BrowserModule,
-    FocusModule.forRoot(),
+    AutofocusModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([

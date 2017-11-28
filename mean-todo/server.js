@@ -9,8 +9,20 @@ const API = require('./server/routes/api');
 const app = express();
 
 // connect DB
-mongoose.connect('mongodb://localhost/mean-todo2', {
-    useMongoClient: true
+var databaseUrl = 'mongodb://julee_k:julee_k@ds121906.mlab.com:21906/board';
+
+// mongoose.connect(databaseUrl, {
+//     useMongoClient: true
+// });
+
+mongoose.connect(databaseUrl);
+var db = mongoose.connection;
+
+db.once('open', function(){
+    console.log('DB connected');
+});
+db.on('error', function(err){
+    console.log('DB ERROR : ' + err);
 });
 
 app.use(bodyParser.json());
