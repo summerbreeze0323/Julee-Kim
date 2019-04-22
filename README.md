@@ -4,7 +4,6 @@
 
 ## Sho
 
-* [demo](http://d2sekpvl5061e3.cloudfront.net/)
 * used skills : HTML5, CSS3, Javascript & Jquery, Responsive Web
 
 
@@ -35,3 +34,41 @@
 * used skills : HTML5, CSS3, Jquery, Node.js, MySQL
 * 홈페이지 퍼블리싱과 새소식, faq 백엔드 작업
 * [Go to site](https://login.logintalk.kr/)
+
+# 경영효율화컨설팅
+
+* used skills : HTML5, SCSS, webpack, Javascript & Jquery, ajax 
+* used plugin : slick, AOS, Bootstrap
+* [Go to site](https://biz.peoplelife.kr/)
+
+# 노무법인 공명
+
+* used skills : HTML5, SCSS, webpack, Javascript & Jquery, ajax 
+* used plugin : slick, AOS, Bootstrap
+* [Go to site](https://gmhr.co.kr/)
+
+# 보험클리닉 채용페이지
+
+* used skills : HTML5, SCSS, webpack, Javascript & Jquery, ajax 
+* used plugin : slick, AOS, Bootstrap
+* [Go to site](https://clinic.peoplelife.kr/recruit)
+
+# 보험클리닉 SHOP(PC)
+
+* used skills : HTML5, SCSS, webpack, Vue.js, axios
+* used plugin : slick, AOS, Bootstrap
+* 작업부분: 상담후기 목록, 무료상담신청
+* [Go to site](https://bohumclinic.com/shop)
+
+# 보험클리닉 (MOBILE)
+
+* used skills : HTML5, SCSS, webpack, Vue.js, axios
+* used plugin : slick, AOS, Bootstrap
+* 작업부분: 메인게이트, 홍보채널 메뉴를 제외한 모든 페이지
+* [Go to site](https://m.bohumclinic.com)
+
+
+# 파인즈(사내 프로그램)
+* used skills : HTML5, SCSS, Vue.js(CLI 3), axios used plugin: Semantic UI
+* used plugin: Semantic UI
+* 작업부분: 게시판 CRUD
