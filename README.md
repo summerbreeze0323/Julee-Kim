@@ -31,9 +31,8 @@
 
 # 로그인톡 홈페이지
 
-* used skills : HTML5, CSS3, Jquery, Node.js, MySQL
-* 홈페이지 퍼블리싱과 새소식, faq 백엔드 작업
-* [Go to site](https://login.logintalk.kr/)
+* used skills : HTML5, CSS3, Jquery
+* 홈페이지 퍼블리싱
 
 # 경영효율화컨설팅
 
