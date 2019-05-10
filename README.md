@@ -68,6 +68,6 @@
 
 
 # 파인즈(사내 프로그램)
-* used skills : HTML5, SCSS, Vue.js(CLI 3), axios used plugin: Semantic UI
+* used skills : HTML5, SCSS, Vue.js(CLI 2), axios used plugin: Semantic UI
 * used plugin: Semantic UI
 * 작업부분: 게시판 CRUD
