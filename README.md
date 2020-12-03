@@ -38,7 +38,6 @@
 
 * used skills : HTML5, SCSS, webpack, Javascript & Jquery, ajax 
 * used plugin : slick, AOS, Bootstrap
-* [Go to site](https://biz.peoplelife.kr/)
 
 # 노무법인 공명
 
@@ -64,10 +63,19 @@
 * used skills : HTML5, SCSS, webpack, Vue.js, axios
 * used plugin : slick, AOS, Bootstrap
 * 작업부분: 메인게이트, 홍보채널 메뉴를 제외한 모든 페이지
-* [Go to site](https://m.bohumclinic.com)
 
 
-# 파인즈(사내 프로그램)
-* used skills : HTML5, SCSS, Vue.js(CLI 2), axios used plugin: Semantic UI
+
+# 파인즈 ERP
+* used skills : HTML5, SCSS, Vue.js, axios used plugin: Semantic UI
 * used plugin: Semantic UI
 * 작업부분: 게시판 CRUD
+
+# 트이다 홈페이지
+* used skills : HTML5, SCSS, webpack
+* used plugin: slick, AOS, Bootstrap
+* [Go to site](https://www.teuida.net)
+
+# 트이다 관리자
+* used skills : HTML5, SCSS, Vue.js, axios
+* used plugin: Bootstrap-vue
